@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    font-size: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: forestgreen;
+    padding: 15px;
+}
+
+nav {
+    justify-self: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 1.5rem;
+}
