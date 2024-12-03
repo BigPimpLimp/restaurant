@@ -1,23 +1,15 @@
-export const greeting = 'Test';
+import { createElement } from "./index.js";
 
-export function createElement (id, element) {
-    const content = document.getElementById(id);
-    const container = document.createElement(element);
-    content.appendChild(container);
-    return container;
-}
-
-export function createDom () {
+export function createHomeDom () {
     const container = createElement('content', 'div');
-    container.style.width = '200px';
-    container.style.height = '600px';
-    container.style.backgroundColor = 'red';
+    container.style.width = '900px';
+    container.style.height = '1000px';
+    container.style.backgroundColor = 'orange';
     container.style.display = 'flex';
     container.style.justifySelf = 'center';
     container.style.flexDirection = 'column';
     container.style.flex = '1 0 80%';
-    container.textContent = 't';
+    container.textContent = 'tttttttttttttttttttttttt';
     container.position = 'relative';
-
 }
 
