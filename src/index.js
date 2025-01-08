@@ -15,6 +15,12 @@ export function createElement (id, element) {
     return container;
 }
 
+export function styleText(variable, fontSize, textContent, textAlign) {
+    variable.textContent = textContent;
+    variable.style.fontSize = fontSize;
+    variable.style.textAlign = textAlign; 
+}
+
 (function switchPage () {
     createHomeDom();
     const homeButton = document.getElementById('home-button');
