@@ -8,17 +8,30 @@ import { createMenuDom } from "./menu.js";
 import { createAboutDom } from "./about.js";
 
 // Element created will append to id given
-export function createElement (id, element) {
+export function createElement (id, element, cssClass) {
     const content = document.getElementById(id);
     const container = document.createElement(element);
     content.appendChild(container);
+    container.setAttribute('class', cssClass);
     return container;
 }
 
-export function styleText(variable, fontSize, textContent, textAlign) {
+export function styleText(variable, fontSize, textContent, textAlign, cssClass) {
     variable.textContent = textContent;
     variable.style.fontSize = fontSize;
     variable.style.textAlign = textAlign; 
+}
+
+export function styleMainContainer(variable, width, height, opacity, display, justifySelf, flexDirection, flexValue, position, alignItems) {
+    variable.style.width = width;
+    variable.style.height = height;
+    variable.style.opacity = opacity;
+    variable.style.display = display;
+    variable.style.justifySelf = justifySelf;
+    variable.style.flexDirection = flexDirection;
+    variable.style.flex = flexValue;
+    variable.position = position;
+    variable.style.alignItems = alignItems;
 }
 
 (function switchPage () {
