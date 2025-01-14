@@ -20,9 +20,10 @@ export function createHomeDom () {
     p1.textContent = 'Scotty\'s offers the best Sushi you will ever put on your tongue. Not to mention the vibes are out of this world dawg. Come in, grab a seat and get to munchin!!!';
     p1.style.width = '50%';
     p1.style.fontSize = '2.0rem';
-    p1.style.padding = '10px';
+    p1.style.padding = '25px';
     p1.style.backgroundImage = `url(${background})`;
     p1.style.marginBottom = '50px';
+    p1.style.borderRadius = '15% 25%';
 
     const hoursContainer = createElement('div1', 'div');
     hoursContainer.setAttribute('id', 'hoursContainer');

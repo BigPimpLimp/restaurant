@@ -16,6 +16,14 @@ export function createElement (id, element, cssClass) {
     return container;
 }
 
+export function createMultipleElements(parentID, numElem, element, cssClass) {
+    let myDivs = [];
+    for (let i = 0; i < numElem; i++) {
+        myDivs.push(createElement(parentID, element, cssClass))
+    } 
+    return myDivs;
+};
+
 export function styleText(variable, fontSize, textContent, textAlign, cssClass) {
     variable.textContent = textContent;
     variable.style.fontSize = fontSize;
