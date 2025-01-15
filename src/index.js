@@ -16,13 +16,20 @@ export function createElement (id, element, cssClass) {
     return container;
 }
 
+//parameter order parentID, numberOf Elememnts, class, OwnID
 export function createMultipleElements(parentID, numElem, element, cssClass) {
-    let myDivs = [];
+    let arr = [];
     for (let i = 0; i < numElem; i++) {
-        myDivs.push(createElement(parentID, element, cssClass))
+        arr.push(createElement(parentID, element, cssClass))
     } 
-    return myDivs;
+    return arr;
 };
+
+export function addImage(id, src, arr, cssClass) {
+    const img = createElement(id, 'img', cssClass)
+    img.setAttribute('src', src);
+    arr.appendChild(img);
+}
 
 export function styleText(variable, fontSize, textContent, textAlign, cssClass) {
     variable.textContent = textContent;
