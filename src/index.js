@@ -25,10 +25,14 @@ export function createMultipleElements(parentID, numElem, element, cssClass) {
     return arr;
 };
 
-export function addImage(id, src, arr, cssClass) {
-    const img = createElement(id, 'img', cssClass)
+export function addImage(id, src, cssClass, divCssClass, imgDivId, imgTextClass) {
+    let imgDiv = createElement(id, 'div', divCssClass);
+    imgDiv.setAttribute('id', imgDivId);
+    let imgText = createElement(id, 'p', imgTextClass);
+    const img = createElement(imgDivId, 'img', cssClass);
     img.setAttribute('src', src);
-    arr.appendChild(img);
+    // arr.appendChild(imgDiv);
+    // imgDiv.appendChild(img);
 }
 
 export function styleText(variable, fontSize, textContent, textAlign, cssClass) {

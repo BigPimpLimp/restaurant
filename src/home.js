@@ -15,24 +15,28 @@ export function createHomeDom () {
     header.style.backgroundImage = `url(${background})`;
     header.style.borderRadius = '35%';
     header.style.marginBottom = '50px';
+    header.style.border = '2px solid rgba(255, 127, 80';
 
     const p1 = createElement('div1', 'p');
-    p1.textContent = 'Scotty\'s offers the best Sushi you will ever put on your tongue. Not to mention the vibes are out of this world dawg. Come in, grab a seat and get to munchin!!!';
+    p1.textContent = 'Scotty\'s offers the best Sushi you will ever put on your tongue. Not to mention the vibes are out of this world dawg. Come in, grab a seat and get to munchin!!! - GunwalK';
     p1.style.width = '50%';
     p1.style.fontSize = '2.0rem';
     p1.style.padding = '25px';
-    p1.style.backgroundImage = `url(${background})`;
     p1.style.marginBottom = '50px';
-    p1.style.borderRadius = '15% 25%';
+    p1.style.borderRadius = '25% 25%';
+    p1.style.border = '2px solid white';
+    p1.style.backgroundColor = 'rgba(255, 127, 80, 0.9)';
 
     const hoursContainer = createElement('div1', 'div');
     hoursContainer.setAttribute('id', 'hoursContainer');
     hoursContainer.style.display = 'flex';
     hoursContainer.style.alignItems = 'center';
     hoursContainer.style.flexDirection = 'column';
-    hoursContainer.style.padding = '40px';
-    hoursContainer.style.borderRadius = '15% 25%';
-    hoursContainer.style.backgroundImage = `url(${background})`;
+    hoursContainer.style.width = '50%'
+    hoursContainer.style.padding = '25px';
+    hoursContainer.style.borderRadius = '25% 25%';
+    hoursContainer.style.border = '2px solid white';
+    hoursContainer.style.backgroundColor = 'rgba(255, 127, 80, 0.9)';
 
     const hoursHeader = createElement('hoursContainer', 'h3');
     hoursHeader.textContent = 'Hours';
